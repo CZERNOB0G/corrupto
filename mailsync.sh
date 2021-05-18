@@ -16,7 +16,7 @@ while [ -z "${confirmacao}" -o "${confirmacao^}" != 'N' ];
 echo "==============================================="
 echo "Pode ser feito a migração inversa agora? (S/N) "
 echo "==============================================="
-read confirmacao
+read confirmacao2
 if  [ "${confirmacao2^}" != 'S' ];
     then
         exit;
