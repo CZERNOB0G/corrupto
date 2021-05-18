@@ -7,7 +7,7 @@ corrige_origem=`echo $origem | awk -F'@' '{print $2}'`;
 host=`host mbox.$corrige_origem | awk -F'address' '{print $2}' | head -n 1`;
 while [ -z "${confirmacao}" -o "${confirmacao^}" != 'N' ];
     do
-        imapsync --host1 $host --user1 $origem --password1 'aq1sw2@#' --nossl1 --host2 $host --user2 $destino --password2 'aq1sw2@#' --nossl2
+        imapsync --host1 $host --user1 $origem --password1 'aq1sw2@#' --nossl1 --host2 $host --user2 $destino --password2 'aq1sw2@#' --nossl2 --addheader
         echo "=================================="
         echo "Deseja migrar mais uma vez? (S/N)"
         echo "=================================="
