@@ -23,7 +23,7 @@ if  [ "${confirmacao2^}" != 'S' ];
 fi
 while [ -z "${confirmacao2}" -o "${confirmacao2^}" != 'N' ];
     do
-        imapsync --host1 $host --user1 $destino --password1 'aq1sw2@#' --nossl1 --host2 $host --user2 $origem --password2 'aq1sw2@#' --nossl2
+        imapsync --host1 $host --user1 $destino --password1 'aq1sw2@#' --nossl1 --host2 $host --user2 $origem --password2 'aq1sw2@#' --nossl2 --addheader
         echo "=================================="
         echo "Deseja migrar mais uma vez? (S/N)"
         echo "=================================="
