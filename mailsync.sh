@@ -1,7 +1,7 @@
 #/bin/bash
-echo -n "Email Origem:"
+echo -n "Email Origem: "
 read origem
-echo -n "Email Destino:"
+echo -n "Email Destino: "
 read destino
 corrige_origem=`echo $origem | awk -F'@' '{print $2}'`;
 host=`host mbox.$corrige_origem | awk -F'address' '{print $2}' | head -n 1`;
