@@ -1,2 +1,2 @@
 # corrupto.sh
-Migração interna Hostnet para corrigir erros de corrupção
+Script para resolver problemas de corrupção.
